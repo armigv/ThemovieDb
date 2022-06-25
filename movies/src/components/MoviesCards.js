@@ -9,7 +9,7 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import { Collapse } from '@material-ui/core';
-import  Image  from 'mui-image'
+import Image from 'mui-image'
 
 
 const useStyles = makeStyles({
@@ -40,7 +40,7 @@ function Cards(checked) {
   console.log(filterMovies);
 
   const classes = useStyles();
-const APIIMAGES =  'https://image.tmdb.org/t/p/w500';
+  const APIIMAGES = 'https://image.tmdb.org/t/p/w500';
 
   return (
     <div>
@@ -52,7 +52,7 @@ const APIIMAGES =  'https://image.tmdb.org/t/p/w500';
               className={classes.root}
               key={movies.id}
             >
-              <Image alt={movies.title} className={classes.media} src={APIIMAGES+movies.poster_path} />
+              <Image alt={movies.title} className={classes.media} src={APIIMAGES + movies.poster_path} />
               <CardContent>
                 <Typography
                   gutterBottom

@@ -17,7 +17,7 @@ const Search = () => {
 
       <form action="" class="search-bar">
         <input type="search" className="search" onChange={inputSearch} pattern=".*\S.*" required />
-        
+
       </form>
 
     </>

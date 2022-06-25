@@ -1,5 +1,3 @@
-
-
 .box {
   margin: 20px;
 }
@@ -11,6 +9,6 @@
   flex-direction: row;
 }
 
-.grid > div {
+.grid>div {
   flex-basis: calc(30% - 70px);
 }

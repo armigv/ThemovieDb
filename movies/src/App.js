@@ -7,6 +7,8 @@ import { actionType } from "./Core/reducer";
 
 import Movies from "./components/pages/movies";
 import Movie from "./components/pages/movie";
+import NavBar from "./components/Navbar";
+import Footer from "./components/footer";
 
 
 function App() {
@@ -24,20 +26,20 @@ function App() {
 
 
 
-  }, );
+  });
 
   return (
     <BrowserRouter>
-      {/* <Navbar /> */}
+      <NavBar />
 
       <Routes>
-         <Route path="*" element={< Movies />} />
-        // <Route path="/peliculas" element={< Movies />} />
-         <Route path="/pelicula/:id" element={<Movie/>} />
-       
+        <Route path="*" element={< Movies />} />
+        <Route path="/peliculas" element={< Movies />} />
+        <Route path="/pelicula/:id" element={<Movie />} />
+
       </Routes>
 
-      {/* <Footer /> */}
+      <Footer />
     </BrowserRouter>
   );
 }
